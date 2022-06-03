@@ -61,7 +61,7 @@ function loadPlayers() {
         } 
       }
     };
-    xhttp.open("GET", "https://www.balldontlie.io/api/v1/games?seasons[]=2021", true);
+    xhttp.open("GET", "https://www.balldontlie.io/api/v1/games?seasons[]=2021&per_page=100", true);
     xhttp.send();
   }
 
