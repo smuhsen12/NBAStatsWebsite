@@ -28,7 +28,7 @@ function loadPlayers() {
       }
     };
 
-    xhttp.open("GET", "https://www.balldontlie.io/api/v1/players", true);
+    xhttp.open("GET", "https://www.balldontlie.io/api/v1/players?per_page=100", true);
     xhttp.send();
 
   }
