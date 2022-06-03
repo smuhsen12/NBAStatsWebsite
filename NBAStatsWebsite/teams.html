@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<script src="main.js"></script>
+<link rel="stylesheet" href="teamsStyle.css">
+
+
+
+<body style="background-color:peachpuff;" >
+
+<div class="topnav">
+ <a class="active" href="about.html">About</a>
+ <a href="teams.html">Teams</a>
+ <a href="players.html">Players</a>
+ <a href="games.html">Recent Games</a>
+ <a href="stats.html">Season Averages</a>
+<input type="text" placeholder="Search..">
+</div>    
+
+<center> <b><h1>NBA Teams</h1></b> </center>
+<div id = "teams">
+ <center><button onclick="loadTeams()">View List Of Teams</button></center>   
+</div>
+
+<!-- All NBA team logo images are from ESPN -->
+<div class="grid-container">
+            
+    <div class="grid-item">
+        <img src="https://a.espncdn.com/i/teamlogos/nba/500/atl.png" alt="Hawks-logo"> 
+        <h4><a href="https://www.espn.com/nba/team/_/name/atl/atlanta-hawks">Atlanta Hawks</a></h4>      
+    </div>
+    <div class="grid-item">
+        <img src="https://a.espncdn.com/i/teamlogos/nba/500/bos.png" alt="Celtics-Logo">
+        <h4><a href="https://www.espn.com/nba/team/_/name/bos/boston-celtics">Boston Celtics</a></h4>
+    </div>
+    <div class="grid-item">
+        <img src="https://a.espncdn.com/i/teamlogos/nba/500/bkn.png" alt="Nets-Logo">
+        <h4><a href="https://www.espn.com/nba/team/_/name/bkn/brooklyn-nets">Brooklyn Nets</a></h4>
+    </div> 
+    <div class="grid-item">
+        <img src="https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/cha.png" alt="Hornets-Logo">
+        <h4><a href="https://www.espn.com/nba/team/_/name/cha/charlotte-hornets">Charlotte Hornets</a></h4>
+    </div>
+    <div class="grid-item">
+        <img src="https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/chi.png" alt="Bulls-Logo">
+        <h4><a href="https://www.espn.com/nba/team/_/name/chi/chicago-bulls">Chicago Bulls</a></h4>
+    </div>
+    <div class="grid-item">
+        <img src="https://a.espncdn.com/i/teamlogos/nba/500/cle.png" alt="Cavs-Logo">
+        <h4><a href="https://www.espn.com/nba/team/_/name/cle/cleveland-cavaliers">Cleveland Cavaliers</a></h4>
+    </div>
+    <div class="grid-item">
+        <img src="https://a.espncdn.com/i/teamlogos/nba/500/dal.png" alt="Mavs-Logo">
+        <h4><a href="https://www.espn.com/nba/team/_/name/dal/dallas-mavericks">Dallas Mavericks</a></h4>
+    </div>
+    <div class="grid-item">
+        <img src="https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/den.png" alt="Nuggets-Logo">
+        <h4><a href="https://www.espn.com/nba/team/_/name/den/denver-nuggets">Denver Nuggets</a></h4>
+    </div>
+    <div class="grid-item">
+        <img src="https://a.espncdn.com/i/teamlogos/nba/500/det.png" alt="Pistons-Logo">
+        <h4><a href="https://www.espn.com/nba/team/_/name/det/detroit-pistons">Detroit Pistons</a></h4>
+    </div>
+    <div class="grid-item">
+        <img src="https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/gs.png" alt="Warriors-Logo">
+        <h4><a href="https://www.espn.com/nba/team/_/name/gs/golden-state-warriors">Golden State Warriors</a></h4>
+    </div> 
+    <div class="grid-item">
+        <img src="https://a.espncdn.com/i/teamlogos/nba/500/hou.png" alt="k">
+        <h4><a href="https://www.espn.com/nba/team/_/name/hou/houston-rockets">Houston Rockets</a></h4>
+    </div> 
+    <div class="grid-item">
+         <img src="https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/ind.png" alt="Pacers-Logo">
+         <h4><a href="https://www.espn.com/nba/team/_/name/ind/indiana-pacers">Indiana Pacers</a></h4>
+    </div> 
+    <div class="grid-item">
+        <img src="https://a.espncdn.com/i/teamlogos/nba/500/lac.png" alt="Clippers-Logo">
+        <h4><a href="https://www.espn.com/nba/team/_/name/lac/la-clippers">Los Angeles Clippers</a></h4>
+    </div>
+    <div class="grid-item">
+        <img src="https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/lal.png" alt="Lakers-Logo">
+        <h4><a href="https://www.espn.com/nba/team/_/name/lal/los-angeles-lakers">Los Angeles Lakers</a></h4>
+    </div> 
+    <div class="grid-item">
+        <img src="https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/mem.png" alt="Grizzlies-Logo">
+        <h4><a href="https://www.espn.com/nba/team/_/name/mem/memphis-grizzlies">Memphis Grizzlies</a></h4>
+    </div>
+    <div class="grid-item">
+        <img src="https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/mia.png" alt="Heat-Logo" > 
+        <h4><a href="https://www.espn.com/nba/team/_/name/mia/miami-heat">Miami Heat</a></h4>
+    </div> 
+    <div class="grid-item">
+        <img src="https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/mil.png" alt="Bucks-Logo" >
+        <h4><a href="https://www.espn.com/nba/team/_/name/mil/milwaukee-bucks">Milwaukee Bucks</a></h4>
+    </div>
+    <div class="grid-item">
+        <img src="https://a.espncdn.com/i/teamlogos/nba/500/min.png" alt="Timberwolves-Logo" >
+        <h4><a href="https://www.espn.com/nba/team/_/name/min/minnesota-timberwolves">Minnesota Timberwolves</a></h4>
+    </div>
+    <div class="grid-item">
+        <img src="https://a.espncdn.com/i/teamlogos/nba/500/no.png" alt="Pelicans-Logo" >
+        <h4><a href="https://www.espn.com/nba/team/_/name/no/new-orleans-pelicans">New Orleans Pelicans</a></h4>
+    </div>
+    <div class="grid-item">
+        <img src="https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/ny.png" alt="Knicks-Logo">
+        <h4><a href="https://www.espn.com/nba/team/_/name/ny/new-york-knicks">Ney York Knicks</a></h4>
+    </div> 
+    <div class="grid-item">
+        <img src="https://a.espncdn.com/i/teamlogos/nba/500/okc.png" alt="Thunder-Logo">
+        <h4><a href="https://www.espn.com/nba/team/_/name/okc/oklahoma-city-thunder">Oklahoma City Thunder</a></h4>
+    </div>
+    <div class="grid-item">
+        <img src="https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/orl.png" alt="Magic-Logo">
+        <h4><a href="https://www.espn.com/nba/team/_/name/orl/orlando-magic">Orlando Magic</a></h4>
+    </div>
+    <div class="grid-item">
+        <img src="https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/phi.png" alt="76ers-Logo">
+        <h4><a href="https://www.espn.com/nba/team/_/name/phi/philadelphia-76ers">Philadelphia 76ers</a></h4>
+    </div>
+    <div class="grid-item">
+        <img src="https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/phx.png" alt="Suns-Logo">
+        <h4><a href="https://www.espn.com/nba/team/_/name/phx/phoenix-suns">Phoenix Suns</a></h4>
+    </div>
+    <div class="grid-item">
+        <img src="https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/por.png" alt="Blazers-Logo">
+        <h4><a href="https://www.espn.com/nba/team/_/name/por/portland-trail-blazers">Portland Trail Blazers</a></h4>
+    </div>
+    <div class="grid-item">
+        <img src="https://a.espncdn.com/i/teamlogos/nba/500/sac.png" alt="Kings-Logo">
+        <h4><a href="https://www.espn.com/nba/team/_/name/sac/sacramento-kings">Sacramento Kings</a></h4>
+    </div>
+    <div class="grid-item">
+        <img src="https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/sa.png" alt="Spurs-Logo">
+        <h4><a href="https://www.espn.com/nba/team/_/name/sa/san-antonio-spurs">San Antonio Spurs</a></h4>
+    </div>
+    <div class="grid-item">
+        <img src="https://a.espncdn.com/combiner/i?img=/i/teamlogos/nba/500/tor.png" alt="Raptors-Logo">
+        <h4><a href="https://www.espn.com/nba/team/_/name/tor/toronto-raptors">Toronto Raptors</a></h4>
+    </div>
+    <div class="grid-item">
+        <img src="https://a.espncdn.com/i/teamlogos/nba/500/utah.png" alt="Jazz-Logo">
+        <h4><a href="https://www.espn.com/nba/team/_/name/utah/utah-jazz">Utah Jazz</a></h4>
+    </div>
+    <div class="grid-item">
+        <img src="https://a.espncdn.com/i/teamlogos/nba/500/wsh.png" alt="Wizards-Logo">
+        <h4><a href="https://www.espn.com/nba/team/_/name/wsh/washington-wizards">Washington Wizards</a></h4>
+    </div>
+  </div>
+
+
+</body>
+</html>
